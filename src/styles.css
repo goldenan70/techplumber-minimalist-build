@@ -61,7 +61,26 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
-html { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; }
+html {
+  font-family: 'Helvetica Neue', 'Neue Haas Grotesk', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern", "ss01";
+  scroll-behavior: smooth;
+}
+body { font-weight: 300; letter-spacing: -0.005em; }
+h1, h2, h3 { letter-spacing: -0.035em; font-weight: 500; }
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.reveal { opacity: 0; }
+.reveal.in-view { animation: fade-up 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+.reveal-delay-1 { animation-delay: 0.1s; }
+.reveal-delay-2 { animation-delay: 0.2s; }
+.reveal-delay-3 { animation-delay: 0.3s; }
 
 :root {
   --radius: 0.625rem;
