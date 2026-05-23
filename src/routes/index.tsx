@@ -61,10 +61,6 @@ const clients = [
   "US China Education Trust",
   "Cohen and Cohen DDS",
   "JCR Companies Inc",
-  "Hilton Hotels",
-  "The Washington Ballet",
-  "Brookfield Properties",
-  "Georgetown Day School",
 ];
 
 const testimonials = [
@@ -141,7 +137,7 @@ function Index() {
           <br className="hidden sm:block" />{" "}
           <span className="text-black/40">not just your tech support.</span>
         </h1>
-        <p className="reveal reveal-delay-2 mt-10 max-w-2xl mx-auto text-base md:text-lg text-black/60 leading-relaxed font-light">
+        <p className="reveal reveal-delay-2 mt-10 max-w-2xl mx-auto text-base md:text-lg text-black/60 leading-relaxed font-normal">
           Running a business is complicated enough without worrying whether your network will
           crash, your data is secure, or your team can access what they need. We deliver
           enterprise-level IT expertise — without the overhead of an in-house team.
@@ -151,7 +147,7 @@ function Index() {
             href="#contact"
             className="group inline-flex items-center gap-2 bg-black text-white rounded-full px-6 py-3 text-sm hover:gap-3 transition-all duration-300"
           >
-            Start a conversation
+            Get in contact
             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </a>
           <a
@@ -201,7 +197,7 @@ function Index() {
                   <span className="absolute inset-y-0 left-1/2 w-px bg-black -translate-x-1/2 transition-transform duration-300 group-data-[state=open]:rotate-90 group-data-[state=open]:scale-0" />
                 </span>
               </AccordionTrigger>
-              <AccordionContent className="text-base md:text-lg text-black/60 leading-relaxed pb-8 max-w-2xl font-light">
+              <AccordionContent className="text-base md:text-lg text-black/60 leading-relaxed pb-8 max-w-2xl font-normal">
                 {s.body}
               </AccordionContent>
             </AccordionItem>
@@ -210,10 +206,10 @@ function Index() {
       </section>
 
       {/* Founder */}
-      <section className="bg-[#f6f5f2] py-24 md:py-36">
+      <section className="bg-black text-white py-24 md:py-36">
         <div className="max-w-6xl mx-auto px-6 md:px-10 grid md:grid-cols-12 gap-12 md:gap-16 items-center">
           <div className="reveal md:col-span-5">
-            <div className="aspect-[4/5] overflow-hidden bg-black/5">
+            <div className="aspect-[4/5] overflow-hidden bg-white/5">
               <img
                 src={founderImg}
                 alt="Jason Hacker, founder of Tech Plumber"
@@ -224,19 +220,19 @@ function Index() {
             <div className="mt-5 flex items-baseline justify-between">
               <div>
                 <div className="text-base font-medium">Jason Hacker</div>
-                <div className="text-sm text-black/50">Founder · Tech Plumber</div>
+                <div className="text-sm text-white/50">Founder · Tech Plumber</div>
               </div>
-              <div className="text-xs uppercase tracking-[0.2em] text-black/40">Est. 2004</div>
+              <div className="text-xs uppercase tracking-[0.2em] text-white/40">Est. 2004</div>
             </div>
           </div>
           <div className="reveal reveal-delay-1 md:col-span-7">
-            <div className="text-xs uppercase tracking-[0.2em] text-black/50 mb-5">
+            <div className="text-xs uppercase tracking-[0.2em] text-white/50 mb-5">
               Meet the founder
             </div>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-[-0.035em] leading-[1.05]">
               25 years of solving problems before you notice them.
             </h2>
-            <div className="mt-10 space-y-5 text-base md:text-lg text-black/70 leading-relaxed font-light max-w-xl">
+            <div className="mt-10 space-y-5 text-base md:text-lg text-white/70 leading-relaxed font-normal max-w-xl">
               <p>
                 Jason Hacker established Tech Plumber in 2004 to provide high-quality tech support
                 for businesses large and small throughout the DC metro area. With more than 25
@@ -275,7 +271,7 @@ function Index() {
               className={`reveal reveal-delay-${i + 1} flex flex-col`}
             >
               <div className="text-3xl text-black/20 leading-none mb-4">"</div>
-              <blockquote className="text-lg md:text-xl leading-snug font-light text-black/85 tracking-tight flex-1">
+              <blockquote className="text-lg md:text-xl leading-snug font-normal text-black/85 tracking-tight flex-1">
                 {t.quote}
               </blockquote>
               <figcaption className="mt-6 pt-5 border-t border-black/10 text-xs uppercase tracking-[0.18em] text-black/50">
@@ -298,7 +294,7 @@ function Index() {
                 Trusted across the DC metro.
               </h2>
             </div>
-            <p className="md:col-span-5 text-white/60 font-light leading-relaxed">
+            <p className="md:col-span-5 text-white/60 font-normal leading-relaxed">
               From family-owned practices to global institutions — every client gets the same
               senior team, the same standards, the same care.
             </p>
@@ -307,7 +303,7 @@ function Index() {
             {clients.map((c) => (
               <li
                 key={c}
-                className="text-lg md:text-xl py-5 border-b border-white/10 font-light flex items-center justify-between group"
+                className="text-lg md:text-xl py-5 border-b border-white/10 font-normal flex items-center justify-between group"
               >
                 <span>{c}</span>
                 <ArrowUpRight className="w-4 h-4 text-white/20 group-hover:text-white group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
@@ -322,8 +318,8 @@ function Index() {
         <div className="reveal text-center mb-14 md:mb-20">
           <div className="text-xs uppercase tracking-[0.2em] text-black/50 mb-4">Contact</div>
           <h2 className="text-5xl md:text-6xl font-medium tracking-[-0.04em]">Get in touch</h2>
-          <p className="mt-5 text-black/60 font-light">
-            Tell us what you're working on. We'll respond within one business day.
+          <p className="mt-5 text-black/60 font-normal">
+            Tell us what's going on.
           </p>
         </div>
         <form
@@ -358,7 +354,7 @@ function Index() {
               required
               rows={5}
               maxLength={2000}
-              className="w-full border-b border-black/20 bg-transparent py-3 text-base font-light focus:outline-none focus:border-black transition-colors resize-none"
+              className="w-full border-b border-black/20 bg-transparent py-3 text-base font-normal focus:outline-none focus:border-black transition-colors resize-none"
               placeholder="Tell us what's going on…"
             />
           </div>
@@ -377,9 +373,9 @@ function Index() {
         <div className="max-w-7xl mx-auto px-6 md:px-10 py-14 grid md:grid-cols-3 gap-8 text-sm">
           <div>
             <div className="text-base font-medium">Tech Plumber</div>
-            <div className="mt-1 text-white/50 font-light">Your technology partner.</div>
+            <div className="mt-1 text-white/50 font-normal">Your technology partner.</div>
           </div>
-          <div className="space-y-1 font-light">
+          <div className="space-y-1 font-normal">
             <a href={`mailto:${EMAIL}`} className="block hover:text-white/70 transition-colors">
               {EMAIL}
             </a>
@@ -390,7 +386,7 @@ function Index() {
               {PHONE}
             </a>
           </div>
-          <div className="md:text-right text-white/40 font-light">
+          <div className="md:text-right text-white/40 font-normal">
             © {new Date().getFullYear()} Tech Plumber. All rights reserved.
           </div>
         </div>
@@ -420,7 +416,7 @@ function Field({
         name={name}
         required={required}
         maxLength={255}
-        className="w-full border-b border-black/20 bg-transparent py-3 text-base font-light focus:outline-none focus:border-black transition-colors"
+        className="w-full border-b border-black/20 bg-transparent py-3 text-base font-normal focus:outline-none focus:border-black transition-colors"
       />
     </div>
   );
