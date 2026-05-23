@@ -220,19 +220,19 @@ function Index() {
             <div className="mt-5 flex items-baseline justify-between">
               <div>
                 <div className="text-base font-medium">Jason Hacker</div>
-                <div className="text-sm text-black/50">Founder · Tech Plumber</div>
+                <div className="text-sm text-white/50">Founder · Tech Plumber</div>
               </div>
-              <div className="text-xs uppercase tracking-[0.2em] text-black/40">Est. 2004</div>
+              <div className="text-xs uppercase tracking-[0.2em] text-white/40">Est. 2004</div>
             </div>
           </div>
           <div className="reveal reveal-delay-1 md:col-span-7">
-            <div className="text-xs uppercase tracking-[0.2em] text-black/50 mb-5">
+            <div className="text-xs uppercase tracking-[0.2em] text-white/50 mb-5">
               Meet the founder
             </div>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-[-0.035em] leading-[1.05]">
               25 years of solving problems before you notice them.
             </h2>
-            <div className="mt-10 space-y-5 text-base md:text-lg text-black/70 leading-relaxed font-light max-w-xl">
+            <div className="mt-10 space-y-5 text-base md:text-lg text-white/70 leading-relaxed font-normal max-w-xl">
               <p>
                 Jason Hacker established Tech Plumber in 2004 to provide high-quality tech support
                 for businesses large and small throughout the DC metro area. With more than 25
