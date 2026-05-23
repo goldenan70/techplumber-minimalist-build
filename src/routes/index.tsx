@@ -61,10 +61,6 @@ const clients = [
   "US China Education Trust",
   "Cohen and Cohen DDS",
   "JCR Companies Inc",
-  "Hilton Hotels",
-  "The Washington Ballet",
-  "Brookfield Properties",
-  "Georgetown Day School",
 ];
 
 const testimonials = [
@@ -151,7 +147,7 @@ function Index() {
             href="#contact"
             className="group inline-flex items-center gap-2 bg-black text-white rounded-full px-6 py-3 text-sm hover:gap-3 transition-all duration-300"
           >
-            Start a conversation
+            Get in contact
             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </a>
           <a
@@ -210,10 +206,10 @@ function Index() {
       </section>
 
       {/* Founder */}
-      <section className="bg-[#f6f5f2] py-24 md:py-36">
+      <section className="bg-black text-white py-24 md:py-36">
         <div className="max-w-6xl mx-auto px-6 md:px-10 grid md:grid-cols-12 gap-12 md:gap-16 items-center">
           <div className="reveal md:col-span-5">
-            <div className="aspect-[4/5] overflow-hidden bg-black/5">
+            <div className="aspect-[4/5] overflow-hidden bg-white/5">
               <img
                 src={founderImg}
                 alt="Jason Hacker, founder of Tech Plumber"
