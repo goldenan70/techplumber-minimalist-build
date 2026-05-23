@@ -6,7 +6,7 @@ import { nitro } from 'nitro/vite';
 export default defineConfig({
   plugins: [
     tanstackStart(),
-    nitro(),           // ← This is key for Vercel
+    nitro(),
     viteReact(),
   ],
 });
